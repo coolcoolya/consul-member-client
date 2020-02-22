@@ -1,0 +1,12 @@
+1.启动consul
+D:\software\consul_1.6.4_windows_amd64
+命令行启动consul：consul agent -dev -ui
+启动成功后，浏览器访问http://localhost:8500会出现注册中心界面
+
+
+新建member客户端：
+1.File ->New Project ->Spring Initializr ->
+    Web -> Spring Web
+    Spring Cloud Discovery -> Consul Discovery
+2.application.yml
+3.启动类添加@EnableDiscoveryClient注解，开启eurekaClient
